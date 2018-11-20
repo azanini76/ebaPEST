@@ -1,0 +1,19 @@
+# NAME file for the example_strong
+# case of Hendricks-Franssen et al. 2009
+# MODFLOW 2005
+# Output Files
+LIST               701   example_strong.lst
+DATA(BINARY)       702   example_strong.hds
+DATA(BINARY)       740   example_strong.flw
+DATA               714   example_strong.hbs
+# Input Files
+DIS                707   example_strong.dis
+BAS6               708   example_strong.ba6
+LPF                709   example_strong.lpf
+ZONE               720   example_strong.zon
+OC                 710   example_strong.oc
+MULT               722   example_strong.mlt
+RCH                713   example_strong.rch
+WEL                712   example_strong.wel
+PCG                711   example_strong.pcg
+HOB                703   example_strong.hob

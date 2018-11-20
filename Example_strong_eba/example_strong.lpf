@@ -1,0 +1,11 @@
+# LPF: Layer Property Flow package file 
+740 -888.0 1 # ILPFCB, HDRY, NPLPF
+0 # LAYTYP
+0 # LAYAVG
+1.0 # CHANI
+1 # LAYVKA
+0 # LAYWET
+HK_Par HK 1.00000000e+000  1 # PARNAM, PARTYP, PARVAL, NCLU
+1 HK_Par  HK_Par_Z1  1 # Layer, MLTARR, ZONARR IZ
+-1   # HK layer 1 print code
+CONSTANT 1 # VKA, layer 1

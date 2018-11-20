@@ -1,0 +1,1 @@
+MF05_14.exe example_strong.nam
