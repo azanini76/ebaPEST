@@ -1,0 +1,153 @@
+ 
+ 
+          ebaPEST RUN RECORD: CASE ebapest_mild                                                                                                                                                                                                                                                    
+ Case Dimensions :-
+                    Number of Parameters:    2500
+              Number of Parameter Groups:       1
+                  Number of Observations:      25
+            Number of Observation Groups:       1
+ 
+ Model Command Line :-
+    modflow.bat                                       
+ Jacobian Command Line :-
+    modflow_adj.bat                                   
+ 
+ Model Interface Files:-
+    Template files:
+        template.tpl                                                                                        
+    for model input files:
+        example_mild.mlt                                                                                    
+    Instruction files:
+        instruct.ins                                                                                        
+    for model ouput files:
+        example_mild.hbs                                                                                    
+    Jacobian Matrix Output File:
+        example_mild.jac                                                                                    
+    Jacobian Matrix Output Format:
+        ascii 
+ 
+ Algorithmic control variables:-
+    Structural Paramter Convergence
+        structural_conv:   5.0000E-04
+    Objective Function Convergence
+        phi_conv:   5.0000E-06
+    Outermost EBA Convergence
+        eba_conv:   5.0000E-05
+    Maximum Number of Structural Parameter Iterations
+        it_max_structural:          0
+    Maximum Number of Objective Function Iterations
+        it_max_phi:         10
+    Maximum Number of Outermost EBA Iterations
+        it_max_eba:          1
+    Logical Flag for storing Q Matrix
+        store_Q:     T
+    Compression of Q0 matrix: [0] none - compute full Q0, [1], Q0 for each beta
+        Q_ compression_flag:          0
+    Derivatives mode: [0] External PEST Perturbations, [1] specified Jacobian command line
+        deriv_mode:          1
+    External derivatives calculated using file:-
+        modflow_adj.bat                                   
+    External derivatives read from file:-
+        example_mild.jac                                                                                    
+    External derivatives file format:-
+        ascii 
+ 
+ 
+       1 Beta Association was defined:
+ Variables for Beta Association:   1
+    Estimat. space for this Beta Assoc: [none] physical space, [log] log transf., [power] power transf., [bounded] bound transf.
+        log - Estimation is in a log transformed space
+ 
+    No Compression Requested.
+ 
+ 
+ Structural parameter control variables:-
+    Structural Parameters for Beta Association:    1
+        Variogram type: exponential
+        Initial structural parameter values:
+            variance =  1.000000E+00
+            correlation length =  5.000000E+02
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    0
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  1.000000E-08
+ 
+ Initial Parameter Definitions:-
+    For initial parameter values see file :- ebapest_mild.epp.0
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          1
+ 
+                            RES :   7.0565E+01
+                      Obj. Fun. :   6.5828E-02
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_1                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_1                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          2
+ 
+                            RES :   8.6594E+00
+                      Obj. Fun. :   2.3060E-02
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_2                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_2                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          3
+ 
+                            RES :   1.1481E+01
+                      Obj. Fun. :   2.6552E-02
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_3                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_3                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          4
+ 
+                            RES :   2.2607E-01
+                      Obj. Fun. :   3.7260E-03
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_4                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_4                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          5
+ 
+                            RES :   3.6059E-03
+                      Obj. Fun. :   4.7057E-04
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_5                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_5                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          6
+ 
+                            RES :   4.1611E-06
+                      Obj. Fun. :   1.5985E-05
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_6                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_6                                                                                
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          7
+ 
+                            RES :   6.8896E-08
+                      Obj. Fun. :   2.0569E-06
+ 
+        For current parameter values see file :- ebapest_mild.epp.1_7                                                                                
+        For current residual values see file :- ebapest_mild.ere.1_7                                                                                

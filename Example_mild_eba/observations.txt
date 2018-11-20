@@ -1,0 +1,29 @@
+BEGIN observation_data TABLE  
+ nrow=25 ncol=4 columnlabels 
+ ObsName     ObsValue   GroupName     Weight
+obs1_001	2.12555837631E+00	obs_lay	1
+obs1_002	1.14090175629E+01	obs_lay	1
+obs1_003	2.17560539246E+01	obs_lay	1
+obs1_004	2.33526039124E+01	obs_lay	1
+obs1_005	1.38677034378E+01	obs_lay	1
+obs1_006	9.05580997467E+00	obs_lay	1
+obs1_007	1.72551937103E+01	obs_lay	1
+obs1_008	2.38253669739E+01	obs_lay	1
+obs1_009	2.72948589325E+01	obs_lay	1
+obs1_010	2.76476173401E+01	obs_lay	1
+obs1_011        2.57328529358E+01	obs_lay	1
+obs1_012        2.45894107819E+01	obs_lay	1
+obs1_013        2.35965423584E+01	obs_lay	1
+obs1_014        2.66516742706E+01	obs_lay	1
+obs1_015        2.72084159851E+01	obs_lay	1
+obs1_016        1.40480947495E+01	obs_lay	1
+obs1_017        1.96386089325E+01	obs_lay	1
+obs1_018        1.64942684174E+01	obs_lay	1
+obs1_019        1.73590354919E+01	obs_lay	1
+obs1_020        1.36381063461E+01	obs_lay	1
+obs1_021	1.53578939438E+01	obs_lay	1
+obs1_022	1.04346103668E+01	obs_lay	1
+obs1_023	1.05206842422E+01	obs_lay	1
+obs1_024	8.34308528900E+00	obs_lay	1
+obs1_025	6.05629539490E+00	obs_lay	1
+END observation_data 

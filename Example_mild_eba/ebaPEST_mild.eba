@@ -1,0 +1,71 @@
+BEGIN algorithmic_cv KEYWORDS
+ phi_conv=5e-6 structural_conv=5e-4
+ it_max_phi=10 it_max_structural=0  it_max_eba=1 
+ deriv_mode = 1
+ posterior_cov_flag = 1
+ jacobian_format = ascii
+ jacobian_file = example_mild.jac
+END algorithmic_cv 
+
+BEGIN prior_mean_data TABLE
+ nrow=1 ncol=2 columnlabels 
+ BetaAssoc  Partrans     
+ 1            log       
+END prior_mean_data    
+
+BEGIN structural_parameter_cv TABLE  
+ nrow=1 ncol=6 columnlabels 
+ BetaAssoc  prior_cov_mode  var_type   struct_par_opt    trans_theta   alpha_trans  
+ 1              1              2            0                1             100
+END structural_parameter_cv   
+
+BEGIN structural_parameters_data TABLE  
+ nrow=1 ncol=3 columnlabels 
+ BetaAssoc  theta_0_1    theta_0_2     
+ 1             1.          500.   
+END structural_parameters_data
+
+BEGIN epistemic_error_term KEYWORDS
+  sig_0 = 1.000e-008   sig_opt = 0  trans_sig=0 alpha_trans=100
+END epistemic_error_term
+
+BEGIN parameter_cv KEYWORDS  
+ ndim=3
+END parameter_cv   
+
+BEGIN parameter_groups TABLE
+  nrow=1 ncol=2 columnlabels
+  groupname     grouptype
+  hyd_cond         1
+END parameter_groups   
+
+BEGIN parameter_data FILES  
+ parameters.txt
+END parameter_data 
+
+BEGIN observation_groups TABLE
+  nrow=1 ncol=1 columnlabels
+  groupname
+  obs_lay
+END observation_groups  
+
+BEGIN observation_data FILES
+ observations.txt
+END observation_data 
+ 
+BEGIN model_command_lines KEYWORDS  
+ Command = modflow.bat
+ DerivCommand = modflow_adj.bat
+END model_command_lines   
+
+BEGIN model_input_files TABLE  
+ nrow=1 ncol=2 columnlabels 
+ TemplateFile                           ModInFile
+ template.tpl                          example_mild.mlt
+END model_input_files 
+
+BEGIN model_output_files  TABLE  
+ nrow=1 ncol=2 columnlabels 
+ InstructionFile       ModOutFile   
+ instruct.ins         example_mild.hbs  
+END model_output_files 

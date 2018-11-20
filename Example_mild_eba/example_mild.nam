@@ -1,0 +1,19 @@
+# NAME file for the example_mild
+# case of Hendricks-Franssen et al. 2009
+# MODFLOW 2005
+# Output Files
+LIST               701   example_mild.lst
+DATA(BINARY)       702   example_mild.hds
+DATA(BINARY)       740   example_mild.flw
+DATA               714   example_mild.hbs
+# Input Files
+DIS                707   example_mild.dis
+BAS6               708   example_mild.ba6
+LPF                709   example_mild.lpf
+ZONE               720   example_mild.zon
+OC                 710   example_mild.oc
+MULT               722   example_mild.mlt
+RCH                713   example_mild.rch
+WEL                712   example_mild.wel
+PCG                711   example_mild.pcg
+HOB                703   example_mild.hob
